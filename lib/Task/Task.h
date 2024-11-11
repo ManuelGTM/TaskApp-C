@@ -15,4 +15,3 @@ void view_task(Task *head);
 void free_task(Task *head);
 
 #endif // TASK_H
-

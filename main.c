@@ -1,3 +1,4 @@
+#include "./lib/Colors/colors.h"
 #include "./lib/Task/Task.h"
 #include <stdio.h>
 #include <stdlib.h>
@@ -22,6 +23,7 @@ int main(void) {
       addTask(&tasks);
       break;
     case 2:
+      clear();
       view_task(tasks);
       break;
     case 3:
@@ -51,12 +53,11 @@ void pauseConsole() {
 }
 
 void show_menu() {
-  printf("\n--- Menú de Selección ---\n");
-  printf("1) Crear tarea\n");
-  /*printf("2) Eliminar tarea\n");*/
-  printf("2) Ver tareas\n");
-  printf("5) Salir\n");
-  printf("Elija una opción: ");
+  printf(BOLD BLUE "===== Menú Principal =====\n" NORMAL);
+  printf(GREEN "1) Add task\n");
+  printf("2) View tasks\n");
+  printf(RED "Salir\n" NORMAL);
+  printf("\nElige una opción: ");
 }
 
 int get_option(int option) {
