@@ -1,5 +1,5 @@
-#ifndef NODE_H
-#define NODE_H
+#ifndef TASK_H
+#define TASK_H
 
 #define MAX 100
 
@@ -9,6 +9,10 @@ typedef struct Task {
 } Task;
 
 Task *create_task(char *data);
-void free_task(Task *node);
+void add_task(Task **head, char *data);
+void delete_task(Task **head, char *name);
+void view_task(Task *head);
+void free_task(Task *head);
 
-#endif // ! NODE_H
+#endif // TASK_H
+
