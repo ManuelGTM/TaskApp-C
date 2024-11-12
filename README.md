@@ -13,6 +13,6 @@ A command-line application for managing tasks, built with C. It allows you to qu
 
 1. Clone this repository.
 2. Run the program with make run
-3. 3. Follow the console instructions to manage your tasks.
+3. Follow the console instructions to manage your tasks.
 
 Enjoy my task app
